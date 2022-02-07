@@ -120,11 +120,12 @@ public class Main
     private static void trimStudents(List<Student> sStudent, float grade)
     {
         Iterator<Student> itr = sStudent.iterator();
-        for (Student st : sStudent) {
-            float sGrade = st.getGrade();
-            if (sGrade < grade)
-                itr.remove();
-        }
-        System.out.println(sStudent);
+       while (itr.hasNext())
+       {
+          Student st = itr.next();
+          float sGrade = st.getGrade();
+          if (sGrade < grade)
+              itr.remove();
+       }
     }
 }

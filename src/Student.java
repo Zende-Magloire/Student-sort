@@ -31,7 +31,7 @@ public class Student implements Comparable <Student>
 
     public String toString()
     {
-        return String.format("[%-20s] [%-20s] - [%5.2f", LName, FName, SGrade);
+        return String.format("[%-20s] [%-20s] - [%5.2f]", LName, FName, SGrade);
     }
 
     @Override
